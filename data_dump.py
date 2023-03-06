@@ -2,20 +2,16 @@ import pymongo
 import pandas as pd
 import json
 from predictive_maintenance.config import mongo_client
-
-DATABASE_NAME = "Predictive"
-COLLECTION_NAME = "maintenance"
-DATA_FILE_PATH = "C:\\Users\\apurv\\OneDrive\\Desktop\\Internship\\Predictive_Maintenance\\predictive_maintenance\\jetengine1.csv"
+DATA_FILE_PATH=r"C:\\Users\\apurv\\OneDrive\Desktop\\Internship\\Predictive_Maintenance\\Predictive_Maintenance\\jetengine1.csv"
+DATABASE_NAME="Predictive"
+COLLECTION_NAME="Maintenance"
 
 if __name__=="__main__":
     df = pd.read_csv(DATA_FILE_PATH)
-    print(f"Rows and Columns: {df.shape}")
-
-    #Convert dataframe into JSON so that we can dump these record in mongodb
+    print(f"Rows and columns: {df.shape}")
+    #Convert dataframe to json so that we can dump these record in mongo db
     df.reset_index(drop=True,inplace=True)
-    json_record = list(json.loads(df.T.to_json()).values()) 
+    json_record = list(json.loads(df.T.to_json()).values())
     print(json_record[0])
-
-    #insert converted json to mongo db  
+    #insert converted json record to mongo db
     mongo_client[DATABASE_NAME][COLLECTION_NAME].insert_many(json_record)
-
