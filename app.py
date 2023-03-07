@@ -5,12 +5,11 @@ import pickle
 from sklearn.ensemble import AdaBoostClassifier
 
 
-st.title('PREDICTIVE MAINTENANCE')
+st.title('PREDICTIVE MAINTENANCE SYSTEM')
 st.header('Domain : Aerospace')
-st.subheader('The main goal is to predict the remaining useful life (RUL) of each engine.')
-st.subheader('RUL is equivalent of number of flights remained for the engine after the last data point in the test dataset.')
+st.subheader(' Solving the real world Businesss usecase of saving the revenue of organisation  by predicting the remaining useful lifespan of the jetengine using machine learning')
 # import the model
-st.subheader('Enter The Sensor Measurement ValueS')
+st.subheader('Enter the values ')
 ada = pickle.load(open('ada.pkl','rb'))
 data = pickle.load(open('data.pkl','rb'))
 

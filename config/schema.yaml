@@ -1,0 +1,60 @@
+columns:
+ Cycle: int64
+ OpSet1: float64
+ OpSet2: float64
+ OpSet3: float64
+ SensorMeasure1: float64
+ SensorMeasure2: float64
+ SensorMeasure3: float64
+ SensorMeasure4: float64
+ SensorMeasure5: float64
+ SensorMeasure6: float64
+ SensorMeasure7: float64
+ SensorMeasure8: float64
+ SensorMeasure9: float64
+ SensorMeasure10: float64
+ SensorMeasure11: float64
+ SensorMeasure12: float64
+ SensorMeasure13: float64
+ SensorMeasure14: float64
+ SensorMeasure15: float64
+ SensorMeasure16: float64
+ SensorMeasure17: int64
+ SensorMeasure18: int64
+ SensorMeasure19: float64
+ SensorMeasure20: float64
+ SensorMeasure21: float64
+ Life_Ratio: float64
+ labels: int64
+
+numerical_columns:
+  - Cycle
+  - OpSet1
+  - OpSet2
+  - OpSet3
+  - SensorMeasure1
+  - SensorMeasure2
+  - SensorMeasure3
+  - SensorMeasure4
+  - SensorMeasure5
+  - SensorMeasure6
+  - SensorMeasure7
+  - SensorMeasure8
+  - SensorMeasure9
+  - SensorMeasure10
+  - SensorMeasure11
+  - SensorMeasure12
+  - SensorMeasure13
+  - SensorMeasure14
+  - SensorMeasure15
+  - SensorMeasure16
+  - SensorMeasure17
+  - SensorMeasure18
+  - SensorMeasure19
+  - SensorMeasure20
+  - SensorMeasure21
+  - Life_Ratio
+ 
+
+
+target_column : labels

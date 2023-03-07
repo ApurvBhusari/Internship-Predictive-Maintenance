@@ -20,4 +20,5 @@ pandas
 streamlit
 scikit-learn==1.0.2
 apache-airflow
+gunicorn
 -e .
